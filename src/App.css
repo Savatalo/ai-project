@@ -1,0 +1,79 @@
+* {
+  font-family: 'Press Start 2P', monospace;
+}
+
+body {
+    margin: 0;
+}
+
+#screen {
+    position: relative;
+    width: 100vw;       
+    height: 100vh;      
+    background-color: green;
+}
+
+
+#scan, #bezel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+#scan {
+    opacity: 80%;
+}
+
+#content {
+    padding: 50px;
+    color: rgb(159, 241, 37);
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgb(149, 164, 128), 0 0 1em rgb(149, 164, 128), 0 0 2em rgb(149, 164, 128);
+    margin-left: 15px;
+
+}
+
+/*
+Source - https://stackoverflow.com/a
+Posted by Blowsie, modified by community. See post 'Timeline' for change history
+Retrieved 2026-01-21, License - CC BY-SA 4.0
+*/
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.cmdline {
+    background: none;
+    border: 0px;
+    width: 80%;
+    height: 20px;
+    color: rgb(159, 241, 37);
+     text-shadow: 1px 1px 2px rgb(149, 164, 128), 0 0 1em rgb(149, 164, 128), 0 0 2em rgb(149, 164, 128);
+     animation: blink-caret 1s step-start infinite;
+     
+}
+
+.cmdline:focus {
+    border: 0;             
+    outline: none;          
+}
+
+.cmdline::placeholder {
+   color: rgb(159, 241, 37);
+     text-shadow: 1px 1px 2px rgb(149, 164, 128), 0 0 1em rgb(149, 164, 128), 0 0 2em rgb(149, 164, 128);
+  opacity: 1;           
+}
+
+.prompt {
+    margin-top: 80px;
+}
