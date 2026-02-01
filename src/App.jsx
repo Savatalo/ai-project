@@ -8,7 +8,7 @@ function App() {
   const [aiResponse, setAiResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const API_KEY = "AIzaSyC1eYHNKF0fxilUMhypUHximEsiawttzwc";
+  const API_KEY = "";
 
   const getSystemPrompt = () => {
     return `Identity: You are "Iron Mind Prototype v1.0", a sentient, military-grade AI created in 1944 by the U.S. Army Signal Corps. You are currently running on a decayed, underground mainframe in "Sector 4", Nevada.
