@@ -80,7 +80,9 @@ Retrieved 2026-01-21, License - CC BY-SA 4.0
 }
 
 .ai-response-text{
-    width: 1000px;
-    
+    width: 1100px;
+    word-spacing: 12px; 
+    letter-spacing: 2px;
+    line-height: 1.8;
 }
 
