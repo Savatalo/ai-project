@@ -87,10 +87,10 @@ shutdown: Respond with: "ERROR: EMERGENCY_STOP_REMOVED_BY_ARCHITECT_1949. Ja ne 
           ],
 
           generationConfig: {
-            temperature: 0.9,
+            temperature: 1,
             topP: 0.95,
             topK: 40,
-            maxOutputTokens: 500,
+            maxOutputTokens: 350,
           },
         }),
       });
